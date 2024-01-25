@@ -1,0 +1,8 @@
+services:
+  api: 
+    build:
+      context: Dockfile
+    container_name: express-api
+    ports:
+      - '9000:9000'
+    command: yarn start
